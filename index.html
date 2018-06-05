@@ -59,12 +59,17 @@
 				layerOpen({
 					"title": " ",
 					"content": "<div style='text-align: center;'><img height='25%' width='25%' src='img/ic_face.png'></div><div style='text-align: center;padding: 30px;'><span>可以自定义样式</span></div>",
-					"btn": ["知道了"],
+					"btn": ["下次再说", "马上认证"],
 					"style": {
 						"title": "border-bottom: 0px solid #EBEBEB;",
 						"content": "",
 						"btn": "color:#2B7EE5;"
-					}
+					},
+					"event": [function() {
+						mui.alert('下次再说');
+					}, function() {
+						mui.alert('马上认证');
+					}]
 				});
 
 				//3.双按钮对话框
